@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=96ue5**u)2rm$4dp6$ql10so30_k@sk^li&5uemv!*jcwmhmi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['fdb-django-01.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['fdb-django-00.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -129,14 +129,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-MEDIA_URL = 'images/'
+MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/files')
+    os.path.join(BASE_DIR, 'static')
 ]
 
 #STATICFILES_DIRS = [
@@ -146,8 +146,6 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 #MEDIA_ROOT = BASE_DIR / 'static/images'
-
-# STATIC_ROOT =
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
